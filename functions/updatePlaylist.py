@@ -8,6 +8,12 @@ import os
 SPOTIFY_CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_SECRET = os.environ.get("SPOTIFY_SECRET", "")
 REDIRECT_URL = os.environ.get("REDIRECT_URL", "")
+SPOTIFY_TOKEN = os.environ.get("SPOTIFY_TOKEN", "")
+
+file = open('token.txt', 'w')
+file.write('SPOTIFY_TOKEN')
+file.close()
+
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope=["playlist-modify-public", "playlist-modify-private"],

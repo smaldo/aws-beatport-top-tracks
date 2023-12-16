@@ -1,0 +1,200 @@
+{
+  "Afro House": {
+    "name": "Afro House",
+    "slug": "afro-house",
+    "id": 89,
+    "playlistUri": "spotify:playlist:6z8TUUOwShapOOTTGvgIuE"
+  },
+  "140 / Deep Dubstep / Grime": {
+    "name": "140 / Deep Dubstep / Grime",
+    "slug": "140-deep-dubstep-grime",
+    "id": 95,
+    "playlistUri": "spotify:playlist:5mqd59sWt3dvWGqDahgTMn"
+  },
+  "Amapiano": {
+    "name": "Amapiano",
+    "slug": "amapiano",
+    "id": 98,
+    "playlistUri": "spotify:playlist:148Jogh09fo8bD1Jy5BfOy"
+  },
+  "Breaks / Breakbeat / UK Bass": {
+    "name": "Breaks / Breakbeat / UK Bass",
+    "slug": "breaks-breakbeat-uk-bass",
+    "id": 9,
+    "playlistUri": "spotify:playlist:7Bp8nKKP2eBOOQudBz0g7F"
+  },
+  "Bass / Club": {
+    "name": "Bass / Club",
+    "slug": "bass-club",
+    "id": 85,
+    "playlistUri": "spotify:playlist:1V11mwaPNwDpfZEzi4Cp4o"
+  },
+  "Bass House": {
+    "name": "Bass House",
+    "slug": "bass-house",
+    "id": 91,
+    "playlistUri": "spotify:playlist:0iOyY6qGXD3QFhimblW2Ng"
+  },
+  "Deep House": {
+    "name": "Deep House",
+    "slug": "deep-house",
+    "id": 12,
+    "playlistUri": "spotify:playlist:6hJpSWx5QwpIaaYMkkniNS"
+  },
+  "DJ Tools": {
+    "name": "DJ Tools",
+    "slug": "dj-tools",
+    "id": 16,
+    "playlistUri": "spotify:playlist:6SI6UcPTfbg2Rcpntggjfa"
+  },
+  "Dance / Electro Pop": {
+    "name": "Dance / Electro Pop",
+    "slug": "dance-electro-pop",
+    "id": 39,
+    "playlistUri": "spotify:playlist:59XjMDHfTbZOMITqrbaGkZ"
+  },
+  "Drum & Bass": {
+    "name": "Drum & Bass",
+    "slug": "drum-bass",
+    "id": 1,
+    "playlistUri": "spotify:playlist:7Km5sZWGsXSKMzOzSJgbGz"
+  },
+  "Dubstep": {
+    "name": "Dubstep",
+    "slug": "dubstep",
+    "id": 18,
+    "playlistUri": "spotify:playlist:3tuAukPpHZXzlKnaA2JxZ3"
+  },
+  "Funky House": {
+    "name": "Funky House",
+    "slug": "funky-house",
+    "id": 81,
+    "playlistUri": "spotify:playlist:6rppiAX8PAtCMeGDPvePnY"
+  },
+  "Electro (Classic / Detroit / Modern)": {
+    "name": "Electro (Classic / Detroit / Modern)",
+    "slug": "electro-classic-detroit-modern",
+    "id": 94,
+    "playlistUri": "spotify:playlist:0HbvPTVHZZaokuSkbKfnpC"
+  },
+  "Electronica": {
+    "name": "Electronica",
+    "slug": "electronica",
+    "id": 3,
+    "playlistUri": "spotify:playlist:0EG2s52VX7LQcYzp5VF9rC"
+  },
+  "Hard Techno": {
+    "name": "Hard Techno",
+    "slug": "hard-techno",
+    "id": 2,
+    "playlistUri": "spotify:playlist:7mAkV3tduHum5uViMpcWqR"
+  },
+  "Hard Dance / Hardcore": {
+    "name": "Hard Dance / Hardcore",
+    "slug": "hard-dance-hardcore",
+    "id": 8,
+    "playlistUri": "spotify:playlist:1JO2tcYeVgNzLcfdkNgMm9"
+  },
+  "House": {
+    "name": "House",
+    "slug": "house",
+    "id": 5,
+    "playlistUri": "spotify:playlist:0yfJeRAHFH7u8I13eUL5Od"
+  },
+  "Jackin House": {
+    "name": "Jackin House",
+    "slug": "jackin-house",
+    "id": 97,
+    "playlistUri": "spotify:playlist:4rYI53BaghsZTeycLUOWTD"
+  },
+  "Mainstage": {
+    "name": "Mainstage",
+    "slug": "mainstage",
+    "id": 96,
+    "playlistUri": "spotify:playlist:2rxy6Mk7zlEgqnaNFD8rQv"
+  },
+  "Indie Dance": {
+    "name": "Indie Dance",
+    "slug": "indie-dance",
+    "id": 37,
+    "playlistUri": "spotify:playlist:1OFPs6iuRTu7w9QBjYkdJq"
+  },
+  "Minimal / Deep Tech": {
+    "name": "Minimal / Deep Tech",
+    "slug": "minimal-deep-tech",
+    "id": 14,
+    "playlistUri": "spotify:playlist:4d6d63rjg1vju0gQV7YCxA"
+  },
+  "Melodic House & Techno": {
+    "name": "Melodic House & Techno",
+    "slug": "melodic-house-techno",
+    "id": 90,
+    "playlistUri": "spotify:playlist:34S9NZOwv53Fwd5AWwr6Vs"
+  },
+  "Nu Disco / Disco": {
+    "name": "Nu Disco / Disco",
+    "slug": "nu-disco-disco",
+    "id": 50,
+    "playlistUri": "spotify:playlist:0Psmt9GXYS2RiwPMkF2WeU"
+  },
+  "Progressive House": {
+    "name": "Progressive House",
+    "slug": "progressive-house",
+    "id": 15,
+    "playlistUri": "spotify:playlist:7iES4ccmOfPgVEq9D2VS17"
+  },
+  "Organic House / Downtempo": {
+    "name": "Organic House / Downtempo",
+    "slug": "organic-house-downtempo",
+    "id": 93,
+    "playlistUri": "spotify:playlist:2wK86pjAaMZJ90SmSrBJl2"
+  },
+  "Tech House": {
+    "name": "Tech House",
+    "slug": "tech-house",
+    "id": 11,
+    "playlistUri": "spotify:playlist:6IsgfpnaXsB5JMMXBFDlqz"
+  },
+  "Psy-Trance": {
+    "name": "Psy-Trance",
+    "slug": "psy-trance",
+    "id": 13,
+    "playlistUri": "spotify:playlist:4MVQmLGBfKJ73i1c71BcLm"
+  },
+  "Techno (Peak Time / Driving)": {
+    "name": "Techno (Peak Time / Driving)",
+    "slug": "techno-peak-time-driving",
+    "id": 6,
+    "playlistUri": "spotify:playlist:4EFoywRC9t6NI9H8VMOVuw"
+  },
+  "Trance (Raw / Deep / Hypnotic)": {
+    "name": "Trance (Raw / Deep / Hypnotic)",
+    "slug": "trance-raw-deep-hypnotic",
+    "id": 99,
+    "playlistUri": "spotify:playlist:3mGIweAENDEfWGDPC9PqOe"
+  },
+  "Techno (Raw / Deep / Hypnotic)": {
+    "name": "Techno (Raw / Deep / Hypnotic)",
+    "slug": "techno-raw-deep-hypnotic",
+    "id": 92,
+    "playlistUri": "spotify:playlist:3bxKaeh4QGKDJuJNe1dhhu"
+  },
+  "Trance (Main Floor)": {
+    "name": "Trance (Main Floor)",
+    "slug": "trance-main-floor",
+    "id": 7,
+    "playlistUri": "spotify:playlist:0oLFk3IIUq3w6MEi4xvAod"
+  },
+  "UK Garage / Bassline": {
+    "name": "UK Garage / Bassline",
+    "slug": "uk-garage-bassline",
+    "id": 86,
+    "playlistUri": "spotify:playlist:3gam31bqCdvlmWNzt4FJhD"
+  },
+  "Trap / Wave": {
+    "name": "Trap / Wave",
+    "slug": "trap-wave",
+    "id": 38,
+    "playlistUri": "spotify:playlist:3622dRajdGVi1vangHiWd6"
+  }
+}

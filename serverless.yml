@@ -11,6 +11,7 @@ provider:
 
 resources:
   - ${file(config/resources/sns.yml)}
+  - ${file(config/resources/top-tracks-dynamodb.yml)}
   - ${file(config/iam-roles.yml)}
 
 layers: ${file(config/layers.yml)}

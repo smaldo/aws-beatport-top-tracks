@@ -9,6 +9,7 @@ input:
 beatportScraper:
   handler: functions/scraper.beatportScraperHandler
   timeout: 10
+  role: BeatportScraperLambdaExecutionRole
   package:
     exclude:
       - "./**"

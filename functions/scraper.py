@@ -2,6 +2,11 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import json
 import requests
+import boto3
+from decimal import Decimal
+
+dynamodb = boto3.resource(
+    'dynamodb', region_name='us-east-1').Table('BeatportTopTracksDynamoDBTable')
 
 
 headers = {
@@ -61,7 +66,7 @@ def getBeatportTop100(genre):
 
         url = f"https://www.beatport.com/track/{slug}/{track_id}"
 
-        topTracks.append({
+        item = {
             "artists": artists,
             "bpm": bpm,
             "date_genre": date_genre,
@@ -81,7 +86,11 @@ def getBeatportTop100(genre):
             "slug": slug,
             "track_id": track_id,
             "url": url
-        })
+        }
+        topTracks.append(item)
+        dynamodb.put_item(
+            Item=json.loads(json.dumps(item), parse_float=Decimal)
+        )
     return topTracks
 
 

@@ -1,0 +1,18 @@
+Resources:
+  BeatportTopTracksDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: BeatportTopTracksDynamoDBTable
+      AttributeDefinitions:
+        - AttributeName: date_genre
+          AttributeType: S
+        - AttributeName: ranking
+          AttributeType: S
+      KeySchema:
+        - AttributeName: date_genre
+          KeyType: HASH # Partition Key
+        - AttributeName: ranking
+          KeyType: RANGE # Sort Key
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5

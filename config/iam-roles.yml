@@ -47,3 +47,28 @@ Resources:
                   Fn::GetAtt:
                     - UpdatePlaylistLambdaFunction
                     - Arn
+  BeatportScraperLambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: BeatportScraperLambdaExecutionRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: DynamoDBAccessPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                Resource:
+                  Fn::GetAtt:
+                    - BeatportTopTracksDynamoDBTable
+                    - Arn

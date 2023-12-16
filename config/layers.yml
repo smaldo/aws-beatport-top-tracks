@@ -1,0 +1,4 @@
+ScraperLayer:
+  path: layers/scraper
+UpdatePlaylistLayer:
+  path: layers/updatePlaylist

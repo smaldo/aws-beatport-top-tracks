@@ -1,0 +1,23 @@
+org: smaldo
+app: aws-beatport-top-tracks
+service: aws-beatport-top-tracks
+
+useDotenv: true
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: python3.9
+
+resources:
+  - ${file(config/resources/sns.yml)}
+  - ${file(config/iam-roles.yml)}
+
+layers: ${file(config/layers.yml)}
+
+functions: ${file(config/functions.yml)}
+
+stepFunctions: ${file(config/state-machines.yml)}
+
+plugins:
+  - serverless-step-functions

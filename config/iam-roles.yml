@@ -1,0 +1,49 @@
+Resources:
+  BeatportTopTracksStepFunctionsExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: states.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: AllowSnsPublish
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: sns:Publish
+                Resource: !Ref BeatportTopTracksCompletionSNSTopic
+        - PolicyName: BeatportTopTracksInputAllowLambdaInvocation
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  Fn::GetAtt:
+                    - InputLambdaFunction
+                    - Arn
+        - PolicyName: BeatportTopTracksScraperAllowLambdaInvocation
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  Fn::GetAtt:
+                    - BeatportScraperLambdaFunction
+                    - Arn
+        - PolicyName: BeatportTopTracksUpdatePlaylistAllowLambdaInvocation
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  Fn::GetAtt:
+                    - UpdatePlaylistLambdaFunction
+                    - Arn

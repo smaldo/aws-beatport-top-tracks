@@ -1,0 +1,12 @@
+Resources:
+  BeatportTopTracksCompletionSNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: "BeatportTopTracksCompletionTopic"
+  BeatportTopTracksCompletionSNSTopicSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Protocol: "email"
+      Endpoint: ${env:EMAIL_ADDRESS}
+      TopicArn:
+        Ref: BeatportTopTracksCompletionSNSTopic

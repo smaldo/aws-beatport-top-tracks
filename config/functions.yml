@@ -1,0 +1,34 @@
+input:
+  handler: functions/input.inputHandler
+  package:
+    exclude:
+      - "./**"
+    include:
+      - functions/input.py
+      - functions/genres.json
+beatportScraper:
+  handler: functions/scraper.beatportScraperHandler
+  timeout: 10
+  package:
+    exclude:
+      - "./**"
+    include:
+      - functions/scraper.py
+  layers:
+    - { Ref: ScraperLayerLambdaLayer }
+updatePlaylist:
+  handler: functions/updatePlaylist.updatePlaylistHandler
+  timeout: 15
+  environment:
+    SPOTIFY_CLIENT_ID: ${env:SPOTIFY_CLIENT_ID}
+    SPOTIFY_SECRET: ${env:SPOTIFY_SECRET}
+    REDIRECT_URL: ${env:REDIRECT_URL}
+  package:
+    exclude:
+      - "./**"
+    include:
+      - functions/updatePlaylist.py
+      - functions/genres.json
+      - functions/token.txt
+  layers:
+    - { Ref: UpdatePlaylistLayerLambdaLayer }

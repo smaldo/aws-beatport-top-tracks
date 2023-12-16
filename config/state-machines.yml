@@ -1,0 +1,48 @@
+stateMachines:
+  BeatportTopTracks:
+    name: BeatportTopTracks
+    events:
+      - schedule: cron(0 7 * * ? *)
+    role:
+      Fn::GetAtt:
+        - BeatportTopTracksStepFunctionsExecutionRole
+        - Arn
+    definition:
+      StartAt: InputState
+      States:
+        InputState:
+          Type: Task
+          Resource:
+            Fn::GetAtt:
+              - input
+              - Arn
+          Next: BeatportGenreMapState
+        BeatportGenreMapState:
+          Type: Map
+          MaxConcurrency: 10
+          Iterator:
+            StartAt: ScrapGenre
+            States:
+              ScrapGenre:
+                Type: Task
+                Resource:
+                  Fn::GetAtt:
+                    - beatportScraper
+                    - Arn
+                Next: UpdatePlaylist
+              UpdatePlaylist:
+                Type: Task
+                Resource:
+                  Fn::GetAtt:
+                    - updatePlaylist
+                    - Arn
+                End: true
+          Next: NotifyCompletion
+        NotifyCompletion:
+          Type: Task
+          Resource: "arn:aws:states:::sns:publish"
+          Parameters:
+            TopicArn:
+              Ref: BeatportTopTracksCompletionSNSTopic
+            Message: "Beatport Top Tracks Step Function Execution Completed"
+          End: true
